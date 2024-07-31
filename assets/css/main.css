@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Newsreader", "Noto Serif TC", system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  body {
+    @apply text-dark;
+    @apply font-normal;
+    font-size: 1rem;
+  }
+}
+
+@layer components {
+  .btn {
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 100px;
+    letter-spacing: 0.1em;
+    @apply text-h6 text-light transition-all;
+  }
+
+  .btn-accent {
+    @apply bg-accent-200;
+  }
+
+  .btn-accent:hover {
+    @apply bg-accent-300;
+  }
+
+  .btn-gray {
+    @apply bg-neutral-100 text-neutral-400;
+  }
+
+  .btn-gray:hover {
+    @apply bg-neutral-200 text-neutral-500;
+  }
+
+  .btn-lg {
+    padding: 1rem 1.5rem;
+    font-weight: 900;
+    @apply text-lg;
+  }
+
+  .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    width: 100%;
+    @apply bg-neutral-100 tracking-wider text-neutral-300;
+  }
+  .form-control:focus {
+    @apply text-neutral-500 ring ring-accent-200;
+  }
+
+  .input-search-group {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    flex-wrap: nowrap;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+    @apply text-neutral-300;
+  }
+
+  .input-search-group input {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    flex-grow: 1;
+    @apply text-base;
+  }
+
+  .input-search-group button {
+    padding: 0.75rem 1.25rem;
+    flex-shrink: 0;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+
+  .input-search-group button span {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+
+  .input-search-group input:focus {
+    border: 0;
+    outline: 0;
+    box-shadow: 0px;
+    @apply text-neutral-500 ring-transparent;
+  }
+}
