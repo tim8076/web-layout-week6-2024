@@ -14,10 +14,1170 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Vivre 生活誌</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div class="bg-primary-100 lg:py-20">
+      <div class="lg:container">
+        <div
+          class="h-[551px] bg-[url('../assets/images/banner-sm.png')] bg-cover bg-center bg-no-repeat md:h-[621px] lg:bg-[url('../assets/images/banner.png')]"
+        >
+          <div
+            class="flex h-full flex-col items-center justify-end pb-12 md:items-start md:justify-center md:ps-15"
+          >
+            <h1 class="mb-5 text-center text-light md:text-start">
+              <span
+                class="mb-2 block text-h6 font-bold tracking-widest md:text-lg"
+                >獻給新世代的生活風格誌</span
+              >
+              <span class="text-2xl font-black tracking-widest md:text-4xl"
+                >一起探索生活的無限可能</span
+              >
+            </h1>
+            <a href="#" class="btn btn-accent lg:btn-lg flex items-center">
+              馬上訂閱
+              <span class="material-symbols-outlined ms-3 text-lg leading-none">
+                east
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="bg-primary-100 py-12 lg:py-20">
+        <div class="container">
+          <h2 class="mb-6 text-xl font-black lg:text-3xl">熱門主題</h2>
+          <ul class="grid gap-2 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-1.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-1-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    城市漫遊者
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-3.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-3-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    秘境尋蹤人
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-5.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-5-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    品味設計家
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-8.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-8-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    美食探險記
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-2.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-2-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    美學建築誌
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-4.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-4-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    慢活生活行
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-6.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-1-sm.png"
+                    alt="theme-image-6"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    工藝匠心賞
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="relative">
+                <picture>
+                  <source
+                    srcset="../assets/images/theme-7.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="../assets/images/theme-7-sm.png"
+                    alt="theme-image-1"
+                    class="h-84 w-full rounded-br-[20px] rounded-tl-[20px] object-cover md:h-[200px]"
+                  />
+                </picture>
+                <div
+                  class="absolute inset-0 flex items-center rounded-br-[20px] rounded-tl-[20px] transition hover:bg-neutral-600 hover:bg-opacity-40"
+                >
+                  <h3
+                    class="w-full text-center font-bold tracking-widest text-light md:text-lg md:font-black"
+                  >
+                    時尚先鋒派
+                  </h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bg-primary-100 py-12 lg:py-20">
+        <div class="container">
+          <h2 class="mb-6 text-xl font-black md:hidden lg:text-3xl">
+            精選文章
+          </h2>
+          <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 md:order-2 md:w-8/12">
+              <div class="swiper swiper-article">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="h-full border-b pb-6">
+                      <picture class="mb-6 block">
+                        <source
+                          srcset="../assets/images/articles-1.png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="../assets/images/articles-1-sm.png"
+                          alt="article-image-1"
+                          class="h-[192px] w-full rounded-sm object-cover"
+                        />
+                      </picture>
+                      <h3 class="mb-2 text-lg font-black">
+                        私人島嶼的露營奇遇記
+                      </h3>
+                      <p class="mb-6 font-semibold text-neutral-400">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <a
+                          href="#"
+                          class="font-bold text-accent-200 transition-colors hover:text-accent-300"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="border-b pb-6">
+                      <picture class="mb-6 block">
+                        <source
+                          srcset="../assets/images/articles-2.png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="../assets/images/articles-2-sm.png"
+                          alt="article-image-2"
+                          class="h-[192px] w-full rounded-sm object-cover"
+                        />
+                      </picture>
+                      <h3 class="mb-2 text-lg font-black">
+                        窺探米其林三星主廚的絕密手藝
+                      </h3>
+                      <p class="mb-6 font-semibold text-neutral-400">
+                        在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <a
+                          href="#"
+                          class="font-bold text-accent-200 transition-colors hover:text-accent-300"
+                          >Read More</a
+                        >
+                        <p
+                          class="rounded-sm bg-primary-300 px-2 py-1 text-h6 text-primary-400"
+                        >
+                          會員專屬
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="h-full border-b pb-6">
+                      <picture class="mb-6 block">
+                        <source
+                          srcset="../assets/images/articles-1.png"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="../assets/images/articles-1-sm.png"
+                          alt="article-image-1"
+                          class="h-[192px] w-full rounded-sm object-cover"
+                        />
+                      </picture>
+                      <h3 class="mb-2 text-lg font-black">
+                        私人島嶼的露營奇遇記
+                      </h3>
+                      <p class="mb-6 font-semibold text-neutral-400">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <div class="flex items-center justify-between">
+                        <a
+                          href="#"
+                          class="font-bold text-accent-200 transition-colors hover:text-accent-300"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full px-3 pb-12 pt-10 md:order-1 md:flex md:w-4/12 md:flex-col md:py-0"
+            >
+              <h2 class="hidden text-xl font-black md:block lg:text-3xl">
+                精選文章
+              </h2>
+              <div
+                class="flex items-center md:mt-auto md:flex-col md:items-start"
+              >
+                <div
+                  class="swiper-pagination swiper-pagination-article static text-start md:mb-8"
+                ></div>
+                <div class="flex items-center lg:-mb-4">
+                  <div
+                    class="swiper-article-button-prev swiper-custom-btn static me-5"
+                  >
+                    <span class="material-symbols-outlined">
+                      arrow_left_alt
+                    </span>
+                  </div>
+                  <div class="w-20 border-b border-neutral-400"></div>
+                  <div
+                    class="swiper-article-button-next swiper-custom-btn static ms-5"
+                  >
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-primary-200 bg-[url('../assets/images/bg-2-sm.png'),_url('../assets/images/bg-1.png')] bg-[position:right_-45px_bottom,_left_-200%_bottom] bg-no-repeat py-12 md:text-neutral-400 lg:bg-[url('../assets/images/bg-2.png'),_url('../assets/images/bg-1.png')] lg:bg-[position:right_15%_bottom_-2%,_left_15%_bottom_-2%] lg:py-20"
+      >
+        <h3
+          class="mb-5 text-center text-h6 font-bold tracking-widest text-accent-200 md:text-xl md:font-black md:text-neutral-400"
+        >
+          \ 母親節強檔活動 /
+        </h3>
+        <h2
+          class="mb-6 text-center text-xl font-black tracking-widest text-neutral-500 md:mb-4 md:text-3xl"
+        >
+          家庭訂閱方案限時 7 折
+        </h2>
+        <div class="flex flex-col items-center">
+          <ul class="mb-6 md:mb-10">
+            <li class="mb-4 flex items-center">
+              <span class="material-symbols-outlined me-3 text-xl leading-none">
+                check
+              </span>
+              <p class="font-semibold tracking-widest">每月最新文章無限閱讀</p>
+            </li>
+            <li class="mb-4 flex items-center">
+              <span class="material-symbols-outlined me-3 text-xl leading-none">
+                check
+              </span>
+              <p class="font-semibold tracking-widest">定期電子報</p>
+            </li>
+            <li class="mb-4 flex items-center">
+              <span class="material-symbols-outlined me-3 text-xl leading-none">
+                check
+              </span>
+              <p class="font-semibold tracking-widest">年度精選禮物</p>
+            </li>
+            <li class="mb-4 flex items-center">
+              <span class="material-symbols-outlined me-3 text-xl leading-none">
+                check
+              </span>
+              <p class="font-semibold tracking-widest">24 /7 優先客戶服務</p>
+            </li>
+            <li class="flex items-center">
+              <span class="material-symbols-outlined me-3 text-xl leading-none">
+                check
+              </span>
+              <p class="font-semibold tracking-widest">
+                為每個成員量身打造專屬行程
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-accent md:btn-lg">我想了解</a>
+        </div>
+      </section>
+      <section class="bg-primary-100 py-12 lg:py-20">
+        <div class="container">
+          <h2 class="mb-6 text-xl font-black lg:mb-10 lg:text-3xl">
+            大家都在看
+          </h2>
+          <div class="swiper swiper-view xl:hidden">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="rounded-lg bg-light p-4">
+                  <h3
+                    class="mb-3 text-lg font-black tracking-widest text-accent-200"
+                  >
+                    酒精路跑地圖
+                  </h3>
+                  <p class="mb-2 font-semibold">
+                    ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                  </p>
+                  <p class="mb-2 font-semibold">
+                    ｜你要的調酒師在這裡！五月全台酒...
+                  </p>
+                  <p class="mb-4 font-semibold">
+                    ｜台南老宅手工酒藏,尋味百年人文釀意
+                  </p>
+                  <img
+                    src="../assets/images/hots-1-sm.png"
+                    alt="view-image-1"
+                    class="mb-4 h-[157px] w-full rounded-sm object-cover"
+                  />
+                  <ul class="mb-4 flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #夜貓行程
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #barhopping
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #全台酒吧
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-h6 font-bold text-accent-200"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="rounded-lg bg-light p-4">
+                  <h3
+                    class="mb-3 text-lg font-black tracking-widest text-accent-200"
+                  >
+                    台北拉麵圖鑑
+                  </h3>
+                  <p class="mb-2 font-semibold">
+                    ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                  </p>
+                  <p class="mb-2 font-semibold">
+                    ｜你要的調酒師在這裡！五月全台酒...
+                  </p>
+                  <p class="mb-4 font-semibold">
+                    ｜台南老宅手工酒藏,尋味百年人文釀意
+                  </p>
+                  <img
+                    src="../assets/images/hots-3-sm.png"
+                    alt="view-image-2"
+                    class="mb-4 h-[157px] w-full rounded-sm object-cover"
+                  />
+                  <ul class="mb-4 flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #雞白湯
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #拉麵
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #台北美食
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-h6 font-bold text-accent-200"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="rounded-lg bg-light p-4">
+                  <h3
+                    class="mb-3 text-lg font-black tracking-widest text-accent-200"
+                  >
+                    海島自由行
+                  </h3>
+                  <p class="mb-2 font-semibold">
+                    ｜私島慢活島嶼生活 - 在熱帶天堂品...
+                  </p>
+                  <p class="mb-2 font-semibold">
+                    ｜海島漂流記 - 在陽光、沙灘和比基...
+                  </p>
+                  <p class="mb-4 font-semibold">
+                    ｜島嶼蹤跡 - 揭開加勒比海上世外桃...
+                  </p>
+                  <img
+                    src="../assets/images/hots-4-sm.png"
+                    alt="view-image-3"
+                    class="mb-4 h-[157px] w-full rounded-sm object-cover"
+                  />
+                  <ul class="mb-4 flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #熱帶國家
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #海邊
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #無敵海景
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-h6 font-bold text-accent-200"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="rounded-lg bg-light p-4">
+                  <h3
+                    class="mb-3 text-lg font-black tracking-widest text-accent-200"
+                  >
+                    短天數出國推薦
+                  </h3>
+                  <p class="mb-2 font-semibold">
+                    ｜72小時東京遊走 - 當個時尚東京通
+                  </p>
+                  <p class="mb-2 font-semibold">｜48小時曼谷遊玩全攻略</p>
+                  <p class="mb-4 font-semibold">｜三天兩夜賞櫻微醺東京</p>
+                  <img
+                    src="../assets/images/hots-5-sm.png"
+                    alt="view-image-4"
+                    class="mb-4 h-[157px] w-full rounded-sm object-cover"
+                  />
+                  <ul class="mb-4 flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #說走就走
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #出國玩
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #東亞
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-h6 font-bold text-accent-200"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="rounded-lg bg-light p-4">
+                  <h3
+                    class="mb-3 text-lg font-black tracking-widest text-accent-200"
+                  >
+                    週末露營趣
+                  </h3>
+                  <p class="mb-2 font-semibold">｜週末說走就走露營記</p>
+                  <p class="mb-2 font-semibold">｜城市野營日記</p>
+                  <p class="mb-4 font-semibold">
+                    ｜和寵物去露營 - 大自然之旅的雙倍...
+                  </p>
+                  <img
+                    src="../assets/images/hots-2-sm.png"
+                    alt="view-image-5"
+                    class="mb-4 h-[157px] w-full rounded-sm object-cover"
+                  />
+                  <ul class="mb-4 flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #戶外
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #露營控
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #凹豆
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-h6 font-bold text-accent-200"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="-mx-3 hidden xl:flex xl:flex-wrap">
+            <div class="w-3/12 px-3">
+              <div class="h-full rounded-lg bg-light p-6">
+                <ul>
+                  <li class="active group mb-6">
+                    <div
+                      class="cursor-pointer rounded-sm p-4 text-lg font-black tracking-widest hover:bg-accent-100 group-[.active]:bg-accent-100"
+                    >
+                      <span class="me-2">·</span> 酒精路跑地圖
+                    </div>
+                  </li>
+                  <li class="group mb-6">
+                    <div
+                      class="cursor-pointer rounded-sm p-4 text-lg font-black tracking-widest hover:bg-accent-100 group-[.active]:bg-accent-100"
+                    >
+                      <span class="me-2">·</span> 台北拉麵圖鑑
+                    </div>
+                  </li>
+                  <li class="group mb-6">
+                    <div
+                      class="cursor-pointer rounded-sm p-4 text-lg font-black tracking-widest hover:bg-accent-100 group-[.active]:bg-accent-100"
+                    >
+                      <span class="me-2">·</span> 海島自由行
+                    </div>
+                  </li>
+                  <li class="group mb-6">
+                    <div
+                      class="cursor-pointer rounded-sm p-4 text-lg font-black tracking-widest hover:bg-accent-100 group-[.active]:bg-accent-100"
+                    >
+                      <span class="me-2">·</span> 短天數出國推薦
+                    </div>
+                  </li>
+                  <li class="group">
+                    <div
+                      class="cursor-pointer rounded-sm p-4 text-lg font-black tracking-widest hover:bg-accent-100 group-[.active]:bg-accent-100"
+                    >
+                      <span class="me-2">·</span> 週末露營趣
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-9/12 px-3">
+              <div class="rounded-lg bg-light p-10">
+                <div class="mb-4 p-6">
+                  <h3
+                    class="mb-6 text-xl font-black tracking-widest text-accent-200"
+                  >
+                    酒精路跑地圖
+                  </h3>
+                  <p class="mb-5 text-h6 font-bold">
+                    ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                  </p>
+                  <p class="mb-5 text-h6 font-bold">
+                    ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                  </p>
+                  <p class="text-h6 font-bold">
+                    ｜台南老宅手工酒藏,尋味百年人文釀意
+                  </p>
+                </div>
+                <div class="mb-4 flex items-center justify-center gap-1">
+                  <img
+                    src="../assets/images/hots-1.png"
+                    alt="host-1-image"
+                    class="h-[232px] rounded-l-xl border object-cover"
+                  />
+                  <img
+                    src="../assets/images/hots-2.png"
+                    alt="host-1-image"
+                    class="h-[232px] border object-cover"
+                  />
+                  <img
+                    src="../assets/images/hots-3.png"
+                    alt="host-1-image"
+                    class="h-[232px] border object-cover"
+                  />
+                  <img
+                    src="../assets/images/hots-4.png"
+                    alt="host-1-image"
+                    class="h-[232px] rounded-r-xl border object-cover"
+                  />
+                </div>
+                <div class="flex items-center justify-between p-6">
+                  <ul class="flex items-center">
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #夜貓行程
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #barhopping
+                    </li>
+                    <li
+                      class="me-2.5 rounded-sm bg-primary-300 px-2 py-1 text-sm font-bold text-primary-400"
+                    >
+                      #全台酒吧
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center py-2.5 text-lg font-bold text-accent-200 transition hover:text-accent-300"
+                  >
+                    View More
+                    <span class="material-symbols-outlined ms-3">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-100 py-12 lg:py-20">
+        <div class="container">
+          <h2 class="mb-6 text-xl font-black lg:mb-10 lg:text-3xl">品味生活</h2>
+          <ul class="-mx-3 flex flex-wrap">
+            <li class="mb-6 w-full px-3 md:w-1/2 xl:w-1/3">
+              <h3
+                class="mb-6 text-4xl font-black tracking-widest text-primary-400 lg:mb-9 lg:text-5xl"
+              >
+                食.
+              </h3>
+              <picture class="mb-6 block lg:mb-9">
+                <source
+                  srcset="../assets/images/life-1.png"
+                  media="(min-width: 576px)"
+                />
+                <img
+                  src="../assets/images/life-1-sm.png"
+                  alt="lift-image-1"
+                  class="h-48 w-full rounded-sm object-cover"
+                />
+              </picture>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜米其林三星主廚的那些絕活傳奇
+              </p>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜探秘成都的地道川味秘技與魅力
+              </p>
+              <p
+                class="mb-6 text-h6 font-bold tracking-widest lg:mb-9 lg:text-lg lg:font-black"
+              >
+                ｜義大利釀酒師對於酒的堅持執著
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center py-2 text-h6 font-bold text-accent-200 transition hover:text-accent-300 lg:text-lg"
+              >
+                View More
+                <span class="material-symbols-outlined ms-3">
+                  arrow_right_alt
+                </span>
+              </a>
+            </li>
+            <li class="mb-6 w-full px-3 md:w-1/2 xl:w-1/3">
+              <h3
+                class="mb-6 text-4xl font-black tracking-widest text-primary-400 lg:mb-9 lg:text-5xl"
+              >
+                藝.
+              </h3>
+              <picture class="mb-6 block lg:mb-9">
+                <source
+                  srcset="../assets/images/life-2.png"
+                  media="(min-width: 576px)"
+                />
+                <img
+                  src="../assets/images/life-2-sm.png"
+                  alt="life-image-2"
+                  class="h-48 w-full rounded-sm object-cover"
+                />
+              </picture>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜解構教主級時裝設計大師的獨...
+              </p>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜當代攝影師鏡頭中的光影離奇
+              </p>
+              <p
+                class="mb-6 text-h6 font-bold tracking-widest lg:mb-9 lg:text-lg lg:font-black"
+              >
+                ｜帶你穿縮中世紀，夏季文藝復興展
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center py-2 text-h6 font-bold text-accent-200 transition hover:text-accent-300 lg:text-lg"
+              >
+                View More
+                <span class="material-symbols-outlined ms-3">
+                  arrow_right_alt
+                </span>
+              </a>
+            </li>
+            <li class="w-full px-3 md:w-1/2 xl:w-1/3">
+              <h3
+                class="mb-6 text-4xl font-black tracking-widest text-primary-400 lg:mb-9 lg:text-5xl"
+              >
+                旅.
+              </h3>
+              <picture class="mb-6 block lg:mb-9">
+                <source
+                  srcset="../assets/images/life-3.png"
+                  media="(min-width: 576px)"
+                />
+                <img
+                  src="../assets/images/life-3-sm.png"
+                  alt="life-image-3"
+                  class="h-48 w-full rounded-sm object-cover"
+                />
+              </picture>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜遠離喧囂,偶探巴塔哥尼亞終界
+              </p>
+              <p
+                class="mb-5 text-h6 font-bold tracking-widest lg:text-lg lg:font-black"
+              >
+                ｜東京深度六區,帶你細品極簡魅力
+              </p>
+              <p
+                class="mb-6 text-h6 font-bold tracking-widest lg:mb-9 lg:text-lg lg:font-black"
+              >
+                ｜專賣奇珍異寶的東歐地下夜市
+              </p>
+              <a
+                href="#"
+                class="flex items-center justify-center py-2 text-h6 font-bold text-accent-200 transition hover:text-accent-300 lg:text-lg"
+              >
+                View More
+                <span class="material-symbols-outlined ms-3">
+                  arrow_right_alt
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bg-primary-200 pb-11 pt-12 lg:py-20">
+        <div class="container">
+          <div class="-mx-3 flex flex-wrap">
+            <div class="mb-[50px] w-full px-3 xl:mb-0 xl:w-6/12">
+              <div
+                class="flex h-full flex-col items-center xl:items-start xl:justify-center"
+              >
+                <p
+                  class="lg:text-black mb-4 text-h6 font-bold tracking-widest text-neutral-400 lg:text-lg"
+                >
+                  今天又不知道要去哪裡了嗎？
+                </p>
+                <h2
+                  class="mb-6 text-center text-xl font-bold tracking-widest lg:mb-9 lg:text-3xl"
+                >
+                  <span class="mb-2 block lg:mb-0 lg:inline">Vivre</span>
+                  <span class="font-black">給你意想不到生活風格提案</span>
+                </h2>
+                <a href="#" class="btn btn-accent lg:btn-lg flex items-center">
+                  馬上訂閱
+                  <span
+                    class="material-symbols-outlined ms-3 text-lg leading-none"
+                  >
+                    east
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="w-full px-3 xl:w-6/12">
+              <div class="swiper swiper-suggest">
+                <ul class="swiper-wrapper pt-4 xl:pb-17">
+                  <li class="swiper-slide lg:mb-4 xl:!translate-y-16">
+                    <div class="relative">
+                      <img
+                        src="../assets/images/projects-2.png"
+                        alt="project-image-1"
+                        class="h-[236px] w-full rounded-sm object-cover"
+                      />
+                      <a
+                        href="#"
+                        class="absolute inset-0 flex items-end justify-between bg-[li] bg-gradient-dark px-3 py-4 font-bold tracking-widest text-light"
+                      >
+                        <span class="text-h6">親子露營要帶什麼？</span>
+                        <span class="material-symbols-outlined text-xl">
+                          arrow_right_alt
+                        </span>
+                      </a>
+                      <div
+                        class="absolute -top-4 left-4 flex items-center rounded-sm border border-accent-100 bg-light px-3 py-2 text-accent-300"
+                      >
+                        <span class="material-symbols-rounded text-xl">
+                          arrow_right
+                        </span>
+                        <span class="text-h6 font-bold tracking-widest"
+                          >人氣行程</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="relative">
+                      <img
+                        src="../assets/images/theme-5.png"
+                        alt="project-image-2"
+                        class="h-[236px] w-full rounded-sm object-cover"
+                      />
+                      <a
+                        href="#"
+                        class="absolute inset-0 flex items-end justify-between bg-[li] bg-gradient-dark px-3 py-4 font-bold tracking-widest text-light"
+                      >
+                        <span class="text-h6">質感房間改造攻略！</span>
+                        <span class="material-symbols-outlined text-xl">
+                          arrow_right_alt
+                        </span>
+                      </a>
+                      <div
+                        class="absolute -top-4 left-4 flex items-center rounded-sm border border-accent-100 bg-light px-3 py-2 text-accent-300"
+                      >
+                        <span class="material-symbols-rounded text-xl">
+                          arrow_right
+                        </span>
+                        <span class="text-h6 font-bold tracking-widest"
+                          >編輯推薦</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide xl:!translate-y-16">
+                    <div class="relative">
+                      <img
+                        src="../assets/images/projects-1.png"
+                        alt="project-image-3"
+                        class="h-[236px] w-full rounded-sm object-cover"
+                      />
+                      <a
+                        href="#"
+                        class="absolute inset-0 flex items-end justify-between bg-[li] bg-gradient-dark px-3 py-4 font-bold tracking-widest text-light"
+                      >
+                        <span class="text-h6">山女孩的健行筆記</span>
+                        <span class="material-symbols-outlined text-xl">
+                          arrow_right_alt
+                        </span>
+                      </a>
+                      <div
+                        class="absolute -top-4 left-4 flex items-center rounded-sm border border-accent-100 bg-light px-3 py-2 text-accent-300"
+                      >
+                        <span class="material-symbols-rounded text-xl">
+                          arrow_right
+                        </span>
+                        <span class="text-h6 font-bold tracking-widest"
+                          >編輯推薦</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="relative">
+                      <img
+                        src="../assets/images/projects-3.png"
+                        alt="project-image-4"
+                        class="h-[236px] w-full rounded-sm object-cover"
+                      />
+                      <a
+                        href="#"
+                        class="absolute inset-0 flex items-end justify-between bg-[li] bg-gradient-dark px-3 py-4 font-bold tracking-widest text-light"
+                      >
+                        <span class="text-h6">適合溜小孩的海邊景點推薦</span>
+                        <span class="material-symbols-outlined text-xl">
+                          arrow_right_alt
+                        </span>
+                      </a>
+                      <div
+                        class="absolute -top-4 left-4 flex items-center rounded-sm border border-accent-100 bg-light px-3 py-2 text-accent-300"
+                      >
+                        <span class="material-symbols-rounded text-xl">
+                          arrow_right
+                        </span>
+                        <span class="text-h6 font-bold tracking-widest"
+                          >熱門文章</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-100 py-12 lg:py-20">
+        <div class="container text-center lg:text-end">
+          <div class="lg:mb-4 lg:flex lg:items-center lg:justify-between">
+            <h3
+              class="mb-4 text-xl font-black tracking-widest text-neutral-500 lg:mb-0 lg:text-3xl"
+            >
+              想看什麼主題由你決定
+            </h3>
+            <p
+              class="mb-9 text-lg font-bold tracking-widest lg:mb-0 lg:text-xl"
+            >
+              歡迎投稿與我們分享
+            </p>
+          </div>
+          <a href="#" class="btn btn-accent">聯絡我們</a>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script type="module">
+      import Swiper from "swiper";
+      import { Navigation, Pagination, Autoplay, Grid } from "swiper/modules";
+      const swiper = new Swiper(".swiper-article", {
+        // Optional parameters
+        modules: [Navigation, Pagination, Autoplay, Grid],
+        loop: true,
+        autoplay: {
+          delay: 2500,
+        },
+        speed: 400,
+        slidesPerView: 1.1,
+        spaceBetween: 24,
+        // using "ratio" endpoints
+        breakpoints: {
+          768: {
+            slidesPerView: 1.2,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          },
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination-article",
+          type: "fraction",
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-article-button-next",
+          prevEl: ".swiper-article-button-prev",
+        },
+      });
+      const swiperView = new Swiper(".swiper-view", {
+        modules: [Autoplay],
+        loop: true,
+        autoplay: {
+          delay: 2500,
+        },
+        slidesPerView: 1.1,
+        spaceBetween: 24,
+        // using "ratio" endpoints
+        breakpoints: {
+          768: {
+            slidesPerView: 1.8,
+          },
+        },
+      });
+      const swiperSuggest = new Swiper(".swiper-suggest", {
+        modules: [Autoplay, Grid],
+        loop: true,
+        autoplay: {
+          delay: 2500,
+        },
+        slidesPerView: 1.1,
+        spaceBetween: 24,
+        grid: {
+          rows: 1,
+          fill: "row",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.8,
+            grid: {
+              rows: 1,
+              fill: "row",
+            },
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            grid: {
+              rows: 2,
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>

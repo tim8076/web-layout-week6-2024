@@ -74,7 +74,7 @@
     flex-wrap: nowrap;
     border: 1px solid #dee2e6;
     overflow: hidden;
-    @apply text-neutral-300;
+    @apply bg-light text-neutral-300;
   }
 
   .input-search-group input {
@@ -85,7 +85,10 @@
   }
 
   .input-search-group button {
-    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.25rem;
     flex-shrink: 0;
     line-height: 1;
     font-size: 1.5rem;
@@ -101,5 +104,26 @@
     outline: 0;
     box-shadow: 0px;
     @apply text-neutral-500 ring-transparent;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+  .swiper-pagination-article .swiper-pagination-current {
+    margin-right: 10px;
+  }
+  .swiper-pagination-article .swiper-pagination-total {
+    margin-left: 10px;
+  }
+  .swiper-custom-btn {
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    border: 1px solid #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    cursor: pointer;
+    user-select: none;
   }
 }

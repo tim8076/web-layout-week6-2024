@@ -1,4 +1,84 @@
-<h1 class="bg-secondary">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header class="bg-primary-100">
+  <div
+    class="container relative flex justify-between pb-4 pt-5 lg:items-center lg:justify-start lg:after:absolute lg:after:bottom-0 lg:after:left-3 lg:after:right-3 lg:after:h-px lg:after:bg-neutral-300 lg:after:content-['']"
+  >
+    <a href="index.html" class="lg:me-9">
+      <img src="../assets/images/main-logo.svg" alt="main-logo" />
+    </a>
+    <a href="#" class="h-6 leading-none lg:hidden" data-hamburgur-btn>
+      <span class="material-symbols-rounded text-xl leading-none"> menu </span>
+    </a>
+    <a href="#" class="hidden h-6 leading-none lg:hidden" data-close-menu-btn>
+      <span class="material-symbols-outlined text-xl leading-none">
+        close
+      </span>
+    </a>
+    <nav
+      class="absolute left-0 right-0 top-[60px] z-50 hidden h-[calc(100vh-60px)] bg-primary-100 pt-2 lg:static lg:block lg:h-auto lg:grow"
+      data-nav-list
+    >
+      <div class="container lg:flex lg:w-full lg:items-center lg:px-0">
+        <div class="input-search-group mb-6 lg:mb-0">
+          <input type="search" placeholder="搜尋文章" />
+          <button type="button">
+            <span class="material-symbols-rounded text-accent-200">
+              search
+            </span>
+          </button>
+        </div>
+        <ul class="mb-10 lg:mb-0 lg:ml-auto lg:flex lg:items-center">
+          <li class="mb-6 lg:mb-0 lg:me-5">
+            <a
+              href="#"
+              class="p-3 text-h6 font-bold transition-colors hover:text-accent-200"
+              >所有文章</a
+            >
+          </li>
+          <li class="mb-6 lg:mb-0 lg:me-5">
+            <a
+              href="#"
+              class="p-3 text-h6 font-bold transition-colors hover:text-accent-200"
+              >訂閱方案</a
+            >
+          </li>
+          <li class="lg:me-5">
+            <a
+              href="#"
+              class="p-3 text-h6 font-bold transition-colors hover:text-accent-200"
+              >關於我們</a
+            >
+          </li>
+        </ul>
+        <a href="#" class="btn btn-accent w-full lg:w-auto">登入 / 註冊</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.querySelector("[data-hamburgur-btn]");
+  const closeBtn = document.querySelector("[data-close-menu-btn]");
+  const menuList = document.querySelector("[data-nav-list]");
+
+  menuBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.body.classList.toggle("overflow-y-hidden");
+    closeBtn.classList.remove("hidden");
+    closeBtn.classList.add("block");
+    menuBtn.classList.add("hidden");
+    menuBtn.classList.remove("block");
+    menuList.classList.remove("hidden");
+    menuList.classList.add("block");
+  });
+
+  closeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.body.classList.toggle("overflow-y-hidden");
+    closeBtn.classList.remove("block");
+    closeBtn.classList.add("hidden");
+    menuBtn.classList.add("block");
+    menuBtn.classList.remove("hidden");
+    menuList.classList.remove("block");
+    menuList.classList.add("hidden");
+  });
+</script>

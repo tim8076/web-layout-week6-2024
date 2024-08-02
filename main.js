@@ -1,3 +1,7 @@
-import './assets/css/main.css';
+// import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
 
-console.log("Hello world!");
+import "./assets/css/main.css";

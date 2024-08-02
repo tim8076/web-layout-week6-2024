@@ -32,6 +32,7 @@ export default {
       light: "#fff",
     },
     fontSize: {
+      sm: ["0.75rem", "1.6"], //12px
       h6: ["1rem", "1.2"], //16px
       base: ["1rem", "1.5"], //16px
       lg: ["1.25rem", "1.2"], //20px
@@ -39,16 +40,17 @@ export default {
       "2xl": ["1.75rem", "1.2"], //28px
       "3xl": ["2rem", "1.2"], //32px
       "4xl": ["2.5rem", "1.2"], //40px
+      "5xl": ["3.25rem", "1.4"], // 52px
     },
     borderRadius: {
       sm: "4px",
       lg: "12px",
       xl: "20px",
     },
-    screens: {
-      xl: "1320px",
-    },
     extend: {
+      screens: {
+        xl: "1320px",
+      },
       spacing: {
         13: "3.25rem",
         15: "3.75rem",
@@ -60,6 +62,10 @@ export default {
       },
       boxShadow: {
         primary: "0px 2px 8px 0px #6E6B6714",
+      },
+      backgroundImage: {
+        "gradient-dark":
+          "linear-gradient(359.16deg, #212529 0.73%, rgba(33, 37, 41, 0.05) 99.27%)",
       },
     },
     container: {
