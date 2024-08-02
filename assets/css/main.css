@@ -106,6 +106,24 @@
     @apply text-neutral-500 ring-transparent;
   }
 
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb .breadcrumb-item {
+    margin-right: 18px;
+    position: relative;
+  }
+
+  .breadcrumb .breadcrumb-item:not(:last-child)::after {
+    position: absolute;
+    content: "/";
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   .swiper-slide {
     height: auto;
   }
@@ -125,5 +143,17 @@
     color: #6c757d;
     cursor: pointer;
     user-select: none;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
