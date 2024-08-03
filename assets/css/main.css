@@ -71,6 +71,11 @@
     width: 100%;
     @apply bg-neutral-100 tracking-wider text-neutral-300;
   }
+
+  .form-control::placeholder {
+    @apply text-neutral-300;
+  }
+
   .form-control:focus {
     @apply text-neutral-500 ring ring-accent-200;
   }
