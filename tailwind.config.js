@@ -44,6 +44,7 @@ export default {
       "5xl": ["3.25rem", "1.4"], // 52px
     },
     borderRadius: {
+      0: 0,
       sm: "4px",
       lg: "12px",
       xl: "20px",

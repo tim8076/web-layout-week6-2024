@@ -46,6 +46,14 @@
     @apply bg-neutral-200 text-neutral-500;
   }
 
+  .btn-transparent {
+    @apply bg-transparent text-neutral-400;
+  }
+
+  .btn-transparent:hover {
+    @apply bg-primary-300;
+  }
+
   .btn-lg {
     padding: 1rem 1.5rem;
     font-weight: 900;
