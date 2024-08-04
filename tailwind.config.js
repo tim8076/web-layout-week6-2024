@@ -62,6 +62,9 @@ export default {
         128: "32rem",
         144: "36rem",
       },
+      minHeight: {
+        body: "calc(100vh - 120px)",
+      },
       boxShadow: {
         primary: "0px 2px 8px 0px #6E6B6714",
       },
