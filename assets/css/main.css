@@ -157,6 +157,10 @@
     cursor: pointer;
     user-select: none;
   }
+  .swiper-custom-btn:hover {
+    background-color: #6c757d;
+    color: #fff;
+  }
 }
 
 @layer utilities {
