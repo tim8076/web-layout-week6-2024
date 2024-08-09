@@ -1,6 +1,7 @@
-<header class="bg-primary-100">
+<header class="sticky top-0 z-50 bg-primary-100" data-header>
   <div
-    class="container relative flex justify-between pb-4 pt-5 lg:items-center lg:justify-start lg:py-9 lg:after:absolute lg:after:bottom-0 lg:after:left-3 lg:after:right-3 lg:after:h-px lg:after:bg-neutral-300 lg:after:content-['']"
+    class="container relative flex justify-between pb-4 pt-5 transition-all lg:items-center lg:justify-start lg:py-9 lg:after:absolute lg:after:bottom-0 lg:after:left-3 lg:after:right-3 lg:after:h-px lg:after:bg-neutral-300 lg:after:content-['']"
+    data-header-container
   >
     <a href="index.html" class="lg:me-9">
       <img src="../assets/images/main-logo.svg" alt="main-logo" />
@@ -57,30 +58,4 @@
   </div>
 </header>
 
-<script>
-  const menuBtn = document.querySelector("[data-hamburgur-btn]");
-  const closeBtn = document.querySelector("[data-close-menu-btn]");
-  const menuList = document.querySelector("[data-nav-list]");
-
-  menuBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.body.classList.toggle("overflow-y-hidden");
-    closeBtn.classList.remove("hidden");
-    closeBtn.classList.add("block");
-    menuBtn.classList.add("hidden");
-    menuBtn.classList.remove("block");
-    menuList.classList.remove("hidden");
-    menuList.classList.add("block");
-  });
-
-  closeBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.body.classList.toggle("overflow-y-hidden");
-    closeBtn.classList.remove("block");
-    closeBtn.classList.add("hidden");
-    menuBtn.classList.add("block");
-    menuBtn.classList.remove("hidden");
-    menuList.classList.remove("block");
-    menuList.classList.add("hidden");
-  });
-</script>
+<script src="../assets/js/header.js"></script>

@@ -79,6 +79,7 @@ const swiperSuggest = new Swiper(".swiper-suggest", {
 });
 
 // tab view
+const tabContent = document.querySelector("[data-view-content]");
 const tabViewList = document.querySelector("[data-view-list]");
 const tabViewTitle = document.querySelector("[data-view-content-title]");
 const tabViewLinks = document.querySelectorAll("[data-view-content-links]");
@@ -137,6 +138,14 @@ const tabViewData = [
 tabViewList.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.nodeName === "BUTTON") {
+    // fadeIn effect
+    tabContent.classList.add("hidden");
+    tabContent.classList.remove("animate__fadeIn");
+    setTimeout(() => {
+      tabContent.classList.remove("hidden");
+      tabContent.classList.add("animate__fadeIn");
+    }, 0);
+
     // list actvie style
     const list = tabViewList.querySelectorAll("li");
     list.forEach((item) => item.classList.remove("active"));

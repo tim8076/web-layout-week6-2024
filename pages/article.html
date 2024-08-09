@@ -208,8 +208,9 @@
               </h2>
               <ul class="no-scrollbar flex gap-6 overflow-x-scroll lg:flex-col">
                 <li
-                  class="flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-10 lg:w-full lg:flex-row"
+                  class="group relative flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-10 lg:w-full lg:flex-row"
                 >
+                  <a href="article.html" class="absolute inset-0"></a>
                   <picture
                     class="mb-[15px] w-full lg:mb-0 lg:mr-6 lg:w-auto lg:flex-shrink-0"
                   >
@@ -225,7 +226,7 @@
                   </picture>
                   <div class="flex flex-col">
                     <h3
-                      class="mb-2 text-lg font-black tracking-widest text-neutral-500"
+                      class="mb-2 text-lg font-black tracking-widest text-neutral-500 transition-colors group-hover:text-accent-200"
                     >
                       私人島嶼的露營奇遇記
                     </h3>
@@ -242,8 +243,9 @@
                   </div>
                 </li>
                 <li
-                  class="flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-10 lg:w-full lg:flex-row"
+                  class="group relative flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-10 lg:w-full lg:flex-row"
                 >
+                  <a href="article.html" class="absolute inset-0"></a>
                   <picture
                     class="mb-[15px] w-full lg:mb-0 lg:mr-6 lg:w-auto lg:flex-shrink-0"
                   >
@@ -259,7 +261,7 @@
                   </picture>
                   <div class="flex flex-col">
                     <h3
-                      class="mb-2 text-lg font-black tracking-widest text-neutral-500"
+                      class="mb-2 text-lg font-black tracking-widest text-neutral-500 transition-colors group-hover:text-accent-200"
                     >
                       城市野營日記
                     </h3>
@@ -276,8 +278,9 @@
                   </div>
                 </li>
                 <li
-                  class="flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-0 lg:w-full lg:flex-row"
+                  class="group relative flex w-11/12 flex-shrink-0 flex-col border-b border-neutral-300 pb-6 md:w-9/12 lg:mb-0 lg:w-full lg:flex-row"
                 >
+                  <a href="#" class="absolute inset-0"></a>
                   <picture
                     class="mb-[15px] w-full lg:mb-0 lg:mr-6 lg:w-auto lg:flex-shrink-0"
                   >
@@ -293,7 +296,7 @@
                   </picture>
                   <div class="flex flex-col">
                     <h3
-                      class="mb-2 text-lg font-black tracking-widest text-neutral-500"
+                      class="mb-2 text-lg font-black tracking-widest text-neutral-500 transition-colors group-hover:text-accent-200"
                     >
                       和寵物去露營 - 大自然之旅的雙倍體驗
                     </h3>
@@ -317,19 +320,6 @@
     </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
-    <script>
-      const subButton = document.querySelector("[data-subscribe-btn]");
-      const subContent = document.querySelector("[data-subscribe-content]");
-      const subMask = document.querySelector("[data-sub-mask]");
-      const subText = document.querySelector("[data-sub-text]");
-      const previewContent = document.querySelector("[data-preview-content]");
-
-      subButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        subContent.classList.toggle("hidden");
-        subMask.classList.toggle("hidden");
-        subText.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../assets/js/article.js"></script>
   </body>
 </html>
